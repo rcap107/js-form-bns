@@ -4,36 +4,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soulshield form</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to the external CSS file -->
 </head>
 <body>
     <h1>Fill out the form</h1>
     <form id="userForm">
-        <button type="submit">Submit</button>
         <label for="shield_set">Soulshield set:</label>
-        <input type="text" id="shield_set" name="shield_set" required><br><br>
+        <select id="shield_set" name="shield_set" required>
+            <option value="profane">Profane</option>
+            <option value="forgotten_brightstone">Forgotten Brightstone</option>
+            <option value="kaari">Kaari</option>
+        </select><br><br> 
         <label for="Piece">Shield piece: </label>
         <input type="text" id="shield_piece" name="shield_piece" required><br><br>
         <label for="hp">HP: </label>
         <input type="text" id="hp" name="hp" required><br><br>
+        <!-- STAT 1 -->
         <label for="stat_1">Stat 1: </label>
-        <select id="stat_1" name="stat_1" required>
-            <option value="Attack">Attack</option>
-            <option value="Defense">Defense</option>
-            <option value="Critical Rate">Critical Rate</option>
-            <option value="Critical Damage">Critical Damage</option>
-            <option value="Accuracy">Accuracy</option>
-            <option value="Evasion">Evasion</option>
-        </select><br><br> 
-        <label for="stat_2">Stat 1: </label>
-        <input type="text" id="stat_2" name="stat_2" required><br><br>
+        <div class="inline-container">
+            <select id="stat_1" name="stat_1" required>
+                <option value="accuracy">Accuracy</option>
+                <option value="crit">Critical rate</option>
+                <option value="cdmg">Critical damage</option>
+                <option value="crit_defense">Critical Defense</option>
+                <option value="cdmg_defense">Critical Damage Defense</option>
+                <option value="piercing">Piercing</option>
+                <option value="evasion">Evasion</option>
+                <option value="block">Block</option>
+                <option value="defense">Defense</option>
+                <option value="health_regen">Health Regen</option>
+                <option value="debuff_resistance">Debuff Resistance</option>
+                <option value="ap">AP</option>
+            </select>
+            <input type="text" id="stat_1_text" name="stat_1_text" required>
+        </div><br><br>
+        <!-- STAT 2 -->
+        <label for="stat_2">Stat 2: </label>
+        <div class="inline-container">
+            <select id="stat_2" name="stat_2" required>
+                <option value="accuracy">Accuracy</option>
+                <option value="crit">Critical rate</option>
+                <option value="cdmg">Critical damage</option>
+                <option value="crit_defense">Critical Defense</option>
+                <option value="cdmg_defense">Critical Damage Defense</option>
+                <option value="piercing">Piercing</option>
+                <option value="evasion">Evasion</option>
+                <option value="block">Block</option>
+                <option value="defense">Defense</option>
+                <option value="health_regen">Health Regen</option>
+                <option value="debuff_resistance">Debuff Resistance</option>
+                <option value="ap">AP</option>
+            </select>
+            <input type="text" id="stat_2_text" name="stat_2_text" required>
+        </div><br><br>
+        <!-- Additional stat 1 -->
         <label for="add_stat_1">Additional Stat 1: </label>
-        <input type="text" id="add_stat_1" name="add_stat_1" required><br><br>
+        <div class="inline-container">
+            <select id="add_stat_1" name="add_stat_1" >
+                <option value="accuracy">Accuracy</option>
+                <option value="crit">Critical rate</option>
+                <option value="cdmg">Critical damage</option>
+                <option value="crit_defense">Critical Defense</option>
+                <option value="cdmg_defense">Critical Damage Defense</option>
+                <option value="piercing">Piercing</option>
+                <option value="evasion">Evasion</option>
+                <option value="block">Block</option>
+                <option value="defense">Defense</option>
+                <option value="health_regen">Health Regen</option>
+                <option value="debuff_resistance">Debuff Resistance</option>
+                <option value="ap">AP</option>
+            </select>
+            <input type="text" id="add_stat_1_text" name="add_stat_1_text" >
+        </div><br><br>
+        <!-- Additional stat 2 -->
         <label for="add_stat_2">Additional Stat 2: </label>
-        <input type="text" id="add_stat_2" name="add_stat_2" required><br><br>
-        <label for="primer_stat">Primer stat: </label>
-        <input type="text" id="primer_stat" name="primer_stat" required><br><br>
+        <div class="inline-container">
+            <select id="add_stat_2" name="add_stat_2" >
+                <option value="accuracy">Accuracy</option>
+                <option value="crit">Critical rate</option>
+                <option value="cdmg">Critical damage</option>
+                <option value="crit_defense">Critical Defense</option>
+                <option value="cdmg_defense">Critical Damage Defense</option>
+                <option value="piercing">Piercing</option>
+                <option value="evasion">Evasion</option>
+                <option value="block">Block</option>
+                <option value="defense">Defense</option>
+                <option value="health_regen">Health Regen</option>
+                <option value="debuff_resistance">Debuff Resistance</option>
+                <option value="ap">AP</option>
+            </select>
+            <input type="text" id="add_stat_2_text" name="add_stat_2_text" >
+        </div><br><br>
+        <!-- Primer stat -->
+        <label for="primer_stat_1">Primer Stat 1: </label>
+        <div class="inline-container">
+            <select id="primer_stat_1" name="primer_stat_1" >
+                <option value="accuracy">Accuracy</option>
+                <option value="crit">Critical rate</option>
+                <option value="cdmg">Critical damage</option>
+                <option value="crit_defense">Critical Defense</option>
+                <option value="cdmg_defense">Critical Damage Defense</option>
+                <option value="piercing">Piercing</option>
+                <option value="evasion">Evasion</option>
+                <option value="block">Block</option>
+                <option value="defense">Defense</option>
+                <option value="health_regen">Health Regen</option>
+                <option value="debuff_resistance">Debuff Resistance</option>
+                <option value="ap">AP</option>
+            </select>
+            <input type="text" id="primer_stat_1_text" name="primer_stat_1_text" >
+        </div><br><br>
+        <!-- Submit -->
+        <button type="submit">Submit</button>
         <button id="exportButton">Export Data</button>
     </form>
+    <button id="clearLocal">Clear localStorage</button>
     <h2>Saved Data</h2>
     <div id="savedData"></div>
     <script src="app.js"></script>

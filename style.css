@@ -1,0 +1,13 @@
+<!-- Add this inside a <style> tag in the <head> section or in your CSS file -->
+<style>
+    .inline-container {
+        display: flex;
+        align-items: center;
+        gap: 10px; /* Adjust spacing between elements */
+    }
+
+    .inline-container select,
+    .inline-container input {
+        flex: 1; /* Adjust width as needed */
+    }
+</style>
