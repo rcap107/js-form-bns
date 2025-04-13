@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soulshield form</title>
+</head>
+<body>
+    <h1>Fill out the form</h1>
+    <form id="userForm">
+        <button type="submit">Submit</button>
+        <label for="shield_set">Soulshield set:</label>
+        <input type="text" id="shield_set" name="shield_set" required><br><br>
+        <label for="Piece">Shield piece: </label>
+        <input type="text" id="shield_piece" name="shield_piece" required><br><br>
+        <label for="hp">HP: </label>
+        <input type="text" id="hp" name="hp" required><br><br>
+        <label for="stat_1">Stat 1: </label>
+        <select id="stat_1" name="stat_1" required>
+            <option value="Attack">Attack</option>
+            <option value="Defense">Defense</option>
+            <option value="Critical Rate">Critical Rate</option>
+            <option value="Critical Damage">Critical Damage</option>
+            <option value="Accuracy">Accuracy</option>
+            <option value="Evasion">Evasion</option>
+        </select><br><br> 
+        <label for="stat_2">Stat 1: </label>
+        <input type="text" id="stat_2" name="stat_2" required><br><br>
+        <label for="add_stat_1">Additional Stat 1: </label>
+        <input type="text" id="add_stat_1" name="add_stat_1" required><br><br>
+        <label for="add_stat_2">Additional Stat 2: </label>
+        <input type="text" id="add_stat_2" name="add_stat_2" required><br><br>
+        <label for="primer_stat">Primer stat: </label>
+        <input type="text" id="primer_stat" name="primer_stat" required><br><br>
+        <button id="exportButton">Export Data</button>
+    </form>
+    <h2>Saved Data</h2>
+    <div id="savedData"></div>
+    <script src="app.js"></script>
+</body>
+</html>
